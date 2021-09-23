@@ -1,0 +1,147 @@
+
+body{
+    background-image: url(images/img-1.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+.container{
+    position: absolute;
+    top: 15%;
+    right: 50%;
+    transform: translate(50%);
+}
+
+.heading{
+    text-align: center;
+    text-transform: uppercase;
+    color: #fff;
+    
+}
+
+.container .info{
+    margin-top: 5rem;
+}
+
+.row .col-lg-offset-4 .form-group input{
+    box-shadow: none;
+    border-radius: 25px;
+    height: 50px;
+    background: rgba(255, 255, 255, 0.08);
+    border: none;
+    color: #fff;
+    transition: 0.3s;
+}
+
+.row .col-lg-offset-4 .form-group {
+    position: relative;
+}
+
+.row .col-lg-offset-4 .form-group input:hover{
+    border-bottom: 1px solid rgb(150, 150, 150);
+    background: none;
+    outline: none;
+}
+
+.row .col-lg-offset-4 .form-group input::placeholder{
+    text-transform: capitalize;
+    outline: none;
+    border: none;
+    color: #fff;      
+}
+.row .col-lg-offset-4 .form-group input:hover::placeholder{
+    filter: brightness(70%);
+}
+
+.row .col-lg-offset-4 .form-check-input{
+    outline: none;
+    box-shadow: none;
+    border-radius: 50px;
+    border: transparent;
+    
+}
+
+.row .col-lg-offset-4 .form-check-input:checked{
+    background-color: #fbceb5;
+}
+
+.field-icon {
+    position: absolute;
+    top: 50%;
+    right: 15px;
+    -webkit-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+    color: rgba(255, 255, 255, 0.9); 
+    cursor: pointer;
+}
+
+.field-icon:hover{
+    color: #fbceb5;
+}
+.row .col-lg-offset-4 .form-check label{
+    text-transform: capitalize;
+    cursor: pointer;
+    color: #fbceb5;
+}
+
+.row .col-lg-offset-4 .form-check label:hover{
+    color: #fff;
+}
+
+.row .col-lg-offset-4 .form-check a{
+    margin-left: 10rem;
+    text-decoration: none;
+    text-transform: capitalize;
+    color: #fff;
+}
+
+.row .col-lg-offset-4 .form-check a:hover{
+    color:#fbceb5;
+}
+
+.row .col-lg-offset-4 .btn-primary{
+    width: 420px;
+    height: 50px;
+    border-radius: 25px;
+    color: #000;
+    background: #fbceb5;
+    outline: none;
+    border: 1px solid transparent;
+    font-size: 16px;
+    margin-top: 3rem;
+    box-shadow: none;
+
+}
+
+.row .col-lg-offset-4 .btn-primary:hover{
+    background: rgba(255, 255, 255, 0.08);
+    color: #fff;
+    border: 1px solid #fff;
+    
+}
+
+.row .col-lg-offset-4 .text-center{
+    color: #fff;
+    font-size: 18px;
+}
+
+.row .col-lg-offset-4 .btn-success{
+    width: 180px;
+    height: 50px;
+    background: #fff;
+    color: #000;
+    border: none;
+    margin-top: 1rem;
+    margin-left: 1rem;
+}
+
+.row .col-lg-offset-4 .btn-success:hover{
+    background: #000;
+    color: #fff;
+    outline: none;
+    box-shadow: none;
+    border: 1px solid transparent;
+}
