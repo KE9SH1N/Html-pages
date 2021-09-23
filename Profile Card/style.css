@@ -1,0 +1,142 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+    --light:#f1f1f1;
+    --white:#fff;
+    --dark:#000;
+    --background:rgb(148,188,196);
+}
+
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    background-color: var(--background);
+}
+
+img{
+    width: 100%;
+    height: auto;
+}
+
+.wrapper{
+    width: 100%;
+    height: auto;
+}
+
+.profile-card{
+    width: 400px;
+    height: 600px;
+    text-align: center;
+    margin: 20px auto;
+    box-shadow: 0px 0px 18px #ccc;
+    background-color: var(--white);
+}
+
+.profile-card .profile-header{
+    height: 180px;
+}
+
+.profile-card .profile-body{
+    background-color: var(--white);
+}
+
+.profile-card .profile-body .author-img{
+    margin-top: -20px;
+    margin-bottom: 20px;
+}
+
+.profile-card .profile-body .author-img img{
+    width: 170px;
+    height: 170px;
+    border-radius: 50%;
+    padding: 5px;
+    background-color: var(--white);
+}
+
+.profile-card .profile-body .name{
+    font-size: 25px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.profile-card .profile-body .intro{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.6;
+    margin: 20px 0px 30px 0px ;
+}
+
+.profile-card .profile-body .intro p{
+    margin-left: 20px;
+    margin-right: 20px;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.profile-card .profile-body .social-icon ul{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.profile-card .profile-body .social-icon ul li{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.profile-card .profile-body .social-icon ul li a{
+    margin-right: 5px;
+    width: 35px;
+    height: 35px;
+    border: 1px solid #ddd;
+    display: block;
+    border-radius: 50%;
+    transition: all 0.5s ease-out;
+}
+
+
+.profile-card .profile-body .social-icon ul li a:hover{
+    background-color: var(--dark);
+    border: 1px solid var(--dark);
+}
+
+.profile-card .profile-body .social-icon ul li a i{
+    line-height: 35px;
+    color: #666;
+    
+}
+
+.profile-card .profile-body .social-icon ul li a i:hover,
+.profile-card .profile-body .social-icon ul li a:hover i{
+    color: var(--white);
+}
+
+.profile-card .profile-body .follow{
+    color: rgb(0,132,255);
+    text-transform: capitalize;
+    cursor: default;
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: -10px;
+    animation: colorShift 5s infinite;
+}
+
+@keyframes colorShift{
+    0%{
+        color: rgb(255,196,0);
+    }
+
+    25%{color: rgb(255,38,38);
+    }
+
+    75%{color: rgb(0,153,255);
+    }
+
+    100%{color: rgb(91,11,167);
+    }
+}
